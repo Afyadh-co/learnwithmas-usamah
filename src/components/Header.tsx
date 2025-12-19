@@ -1,11 +1,14 @@
+'use client'
 
+import { BackToHome } from "@/app/back-to-home";
 import { ThemeToggle } from "@/app/theme-toggle";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 
-
 const Header = () => {
+const {theme} = useTheme()
   return (
-    <header className="navbar border-b sticky top-0 z-50">
+    <header className={`navbar border-b sticky top-0 z-50 ${theme === "dark" ? "bg-black" : "bg-white"}`}>
       <nav>
         <div className="container mx-auto flex items-center justify-between px-4">
           {/* 1. Logo */}
@@ -14,7 +17,10 @@ const Header = () => {
               LearnWith-MasUsamah.
             </h1>
           </Link>
-          <ThemeToggle/>
+          <div className="flex flex-row items-center gap-x-8">
+            <BackToHome />
+            <ThemeToggle />
+          </div>
         </div>
       </nav>
     </header>

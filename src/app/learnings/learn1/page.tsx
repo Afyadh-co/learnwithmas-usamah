@@ -68,7 +68,7 @@ const Learn1: React.FC = () => {
       <h1 className="text-5xl font-bold mb-20">Manipulasi Data</h1>
 
       {/* Tugas */}
-      <div>
+      <div className="mb-6">
         <Image src="/tugas1.jpeg" alt="tugas1 " width={500} height={500} />
       </div>
       <ul className="mb-6">
