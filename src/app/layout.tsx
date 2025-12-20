@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${fontPoppins.className}  antialiased`}>
-        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+        <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           <div className="container mx-auto px-4">{children}</div>
         </ThemeProvider>

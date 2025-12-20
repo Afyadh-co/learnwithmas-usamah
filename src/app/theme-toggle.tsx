@@ -2,17 +2,20 @@
 
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
+// import { useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  // useEffect(() => {
+  //   // Set tema awal ke 'light' jika tema saat ini tidak ditentukan
+  //   if (theme === undefined) {
+  //     setTheme("light");
+  //   }
+  // }, [theme, setTheme]);
+
+  
   return (
-    // <Button variant="outline" size="icon" className="rounded-full" onClick={() => {
-    //   setTheme(theme === "light" ? "dark" : 'light')
-    // }}>
-    //   <FaSun className="abasolute h-10 w-10 rotate-0 scale-100 dark:-rotate-90 dark:scale-0"></FaSun>
-    //   <FaMoon className="abasolute h-10 w-10 rotate-90 scale-0 dark:rotate-0 dark:scale-100"></FaMoon>
-    // </Button>
     <Button
       variant="outline"
       size="icon"

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { BackToHome } from "@/app/back-to-home";
 import { ThemeToggle } from "@/app/theme-toggle";
@@ -6,9 +6,9 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 
 const Header = () => {
-const {theme} = useTheme()
+  const { theme } = useTheme();
   return (
-    <header className={`navbar border-b sticky top-0 z-50 ${theme === "dark" ? "bg-black" : "bg-white"}`}>
+    <header className={`navbar border-b ${theme === "light" && "bg-white"}`}>
       <nav>
         <div className="container mx-auto flex items-center justify-between px-4">
           {/* 1. Logo */}
