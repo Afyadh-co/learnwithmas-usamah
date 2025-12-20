@@ -6,7 +6,7 @@ export default function Home() {
       <div className="container mx-auto mt-20">
         <div>
           <div className="flex flex-col items-center gap-5 mb-8">
-            <h1 className="text-5xl mb-6">Welcome to My Website</h1>
+            <h1 className="text-5xl mb-6 text-center">Welcome to My Website</h1>
             <h2 className="text-2xl">Navigate to Projects</h2>
           </div>
           <div className="flex flex-col items-center  cursor-pointer">

@@ -1,11 +1,9 @@
-import { BackToHome } from "@/app/back-to-home";
 import React from "react";
 
 const Learn2: React.FC = () => {
   return (
-    <div>
+    <div className="container px-4 mt-20">
       <h1>Learn 2</h1>
-      <BackToHome />
     </div>
   );
 };
